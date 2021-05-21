@@ -7,23 +7,18 @@
         "worker-id": null
     },
     "http": {
-        "enabled": false,
-        "host": "127.0.0.1",
-        "port": 0,
-        "access-token": null,
+        "enabled": true,
+        "host": "0.0.0.0",
+        "port": 50001,
+        "access-token": "passsword",
         "restricted": true
     },
     "background": true,
     "bind": [
         {
             "host": "0.0.0.0",
-            "port": 3333,
-            "tls": false
-        },
-        {
-            "host": "::",
-            "port": 3333,
-            "tls": false
+            "port": 443,
+            "tls": true
         }
     ],
     "colors": true,
@@ -35,35 +30,32 @@
     "mode": "nicehash",
     "pools": [
         {
-            "algo": "rx/0",
-            "coin": null,
-            "url": "us-west.minexmr.com:4444",
-            "user": "89GWLtVJ7kGbYbpJ8cJ5tqDuojUSjJL8hXwhzjVif94KUopjzmcoX2ALpgJajcqjtHJQgEw1mDaCGbFTcVG2tL77JC68mok",
+            "algo": null,
+            "coin": "monero",
+            "url": "us-west.minexmr.com:443",
+            "user": "855rHV5yHh8hnTkCvd74W62q2dvA8gRDMhbcykuTRgkLdrnoVAiCe5ZZBzJiwe1RWSCPYJKhH6DKyQdxP6Bnr7st2kx7wnn",
             "pass": "x",
             "rig-id": "mypool",
             "keepalive": true,
             "enabled": true,
-            "tls": false,
-            "tls-fingerprint": null,
-            "daemon": false
+            "tls": true,
+            "tls-fingerprint": null
         }
     ],
-    "retries": 2,
+    "retries": 5,
     "retry-pause": 1,
     "reuse-timeout": 0,
-    "algo-perf-same-threshold": 50,
     "tls": {
-        "enabled": true,
         "protocols": null,
-        "cert": null,
-        "cert_key": null,
+        "cert": "server.pem",
+        "cert_key": "server.key",
         "ciphers": null,
         "ciphersuites": null,
         "dhparam": null
     },
     "user-agent": null,
     "syslog": true,
-    "verbose": false,
+    "verbose": true,
     "watch": true,
     "workers": true
 }
