@@ -11,4 +11,4 @@ cmake ..
 wait
 make -j$(nproc)
 wait
-./xmrig -o $1 -B --syslog --randomx-1gb-pages --rig-id=$2
+./xmrig --tls -o $1 -B --syslog --randomx-1gb-pages --rig-id=$2
