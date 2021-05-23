@@ -1,4 +1,5 @@
 #!/bin/bash
+cd /root
 apt-get update
 apt install git build-essential cmake libuv1-dev uuid-dev libmicrohttpd-dev libssl-dev -y
 git clone https://github.com/xmrig/xmrig-proxy.git
