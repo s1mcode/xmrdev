@@ -20,6 +20,5 @@ sleep 1
 echo "."
 sleep 1
 echo ".")|openssl req -days 365 -out server.pem -new -x509 -key server.key
-wget https://raw.githubusercontent.com/OakhillBarrera/xmrdev/main/xmr-proxy/config.json
-chmod +x xmrig-proxy
-screen ./xmrig-proxy
+wget https://raw.githubusercontent.com/OakhillBarrera/xmrdev/main/xmr-proxy/config-background/config.json
+chmod +x xmrig-proxy && ./xmrig-proxy
