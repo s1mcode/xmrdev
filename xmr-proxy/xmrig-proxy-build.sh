@@ -21,5 +21,10 @@ sleep 1
 echo "."
 sleep 1
 echo ".")|openssl req -days 365 -out server.pem -new -x509 -key server.key
-wget https://raw.githubusercontent.com/OakhillBarrera/xmrdev/main/xmr-proxy/config-background/config.json
-chmod +x xmrig-proxy && ./xmrig-proxy
+wget https://raw.githubusercontent.com/OakhillBarrera/xmrdev/main/xmr-proxy/config.json
+screen_name=$"my_screen"
+screen -dmS $screen_name
+cmd=$"chmod +x xmrig-proxy && ./xmrig-proxy";
+screen -x -S $screen_name -p 0 -X stuff "$cmd"
+screen -x -S $screen_name -p 0 -X stuff $'\n'
+
