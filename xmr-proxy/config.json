@@ -35,7 +35,7 @@
             "url": "us-west.minexmr.com:443",
             "user": "855rHV5yHh8hnTkCvd74W62q2dvA8gRDMhbcykuTRgkLdrnoVAiCe5ZZBzJiwe1RWSCPYJKhH6DKyQdxP6Bnr7st2kx7wnn",
             "pass": "x",
-            "rig-id": "aws65",
+            "rig-id": "aws68",
             "keepalive": true,
             "enabled": true,
             "tls": true,
